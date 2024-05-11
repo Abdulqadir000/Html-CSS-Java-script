@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="income-form">
+            <div class="form-control">
+                <label for="income">Enter Your Salary</label>
+                <input type="number" id="income" placeholder="Enter your salary" required>
+            </div>
+            <button type="submit" class="btn">Salary</button>
+        </form>
+        <form id="expense-form" style="margin-top: 20px;">
+            <div class="form-control">
+                <label for="amount">Enter Expense Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+            </div>
+            <button type="submit" class="btn">Expense</button>
+        </form>
+        <div id="savings" class="savings">
+            <p id="expenses" class="total">Total Expenses: 0</p>
+            <p id="savings-amount" class="total">Savings: 0</p>
+        </div>
+        <div id="expenses-list" class="expenses-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
