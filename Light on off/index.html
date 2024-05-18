@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .con {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+        }
+
+        #myImage {
+            cursor: pointer;
+            width: 200px;
+            height: 180px;
+            transition: transform 0.3s ease;
+        }
+
+        #myImage:hover {
+            transform: scale(1.1);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img id="myImage" onclick="changeImage()" src="bulboff.png">
+        
+    </div>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("bulbon")) {
+                image.src = "bulboff.png";
+            } else {
+                image.src = "bulbon.png";
+            }
+        }
+    </script>
+</body>
+</html>
